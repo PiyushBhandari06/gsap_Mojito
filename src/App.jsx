@@ -1,5 +1,6 @@
 import {ScrollTrigger, SplitText} from "gsap/all";
 import { gsap } from "gsap";
+import Navbar from "./components/Navbar";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 //these gsap plugins aren't automaticallty active therefore we have to register them first.
@@ -7,9 +8,9 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (
-    <div className="flex-center h-[100vh]">
-      <h1 className="text-3xl text-indigo-300">Hello, GSAP !</h1>
-    </div>
+    <main>
+        <Navbar/>
+    </main>
   )
 }
 
